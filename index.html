@@ -48,6 +48,30 @@
       height: 100%;
       border: 0;
     }
+    
+    .address {
+      margin-bottom: 20px;
+    }
+    
+    .links {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .links a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .links a:hover {
+      background-color: #666;
+    }
   </style>
 </head>
 <body>
@@ -55,15 +79,29 @@
     <div class="header">
       <h1 class="title">Devansh Birthday</h1>
       <p class="subtitle">Date of Event: 26th May 2023</p>
+      <p class="subtitle">Time of Event: 07:00 PM</p>
     </div>
     
     <div class="map-container">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.780370522283!2d73.7592994153454!3d18.576441071618226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bede518e7991%3A0xa00c8a997be96296!2sHotel%20Manali!5e0!3m2!1sen!2sin!4v1622186016966!5m2!1sen!2sin" allowfullscreen></iframe>
     </div>
     
-    <p>Address for Event:</p>
-    <p>Hotel Manali</p>
-    <p>Near Nandan Prospera Gold, Balewadi Pune</p>
+    <div class="address">
+      <p>Address for Event:</p>
+      <p>Hotel Manali</p>
+      <p>Near Nandan Prospera Gold, Balewadi Pune</p>
+    </div>
+    
+    <div class="address">
+      <p>Home Address:</p>
+      <p>Ishan Residency, 02, Ishan Residency</p>
+      <p>Samarth Colony, Pan card club road, in HDFC Bank lane, Baner, Pune, Maharashtra 411045</p>
+    </div>
+    <div class="links">
+      <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Devansh%20Birthday&dates=20230526T190000/20230526T210000">Add to Calendar</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Hotel+Manali,+Near+Nandan+Prospera+Gold,+Balewadi+Pune">Get Directions to Venue</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Ishan+Residency,+02,+Ishan+Residency+Samarth+Colony,+Pan+card+club+road,+in+HDFC+Bank+lane,+Baner,+Pune,+Maharashtra+411045">Get Directions to Home</a>
+    </div>
   </div>
 </body>
 </html>
