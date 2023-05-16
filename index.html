@@ -1,188 +1,25 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Devansh Birthday</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fade-in 1s ease forwards;
-    }
-    
-    @keyframes fade-in {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    .header {
-      margin-bottom: 20px;
-    }
-    
-    .title {
-      font-size: 28px;
-      color: #333;
-      margin-bottom: 10px;
-    }
-    
-    .subtitle {
-      font-size: 18px;
-      color: #666;
-      margin-bottom: 20px;
-    }
-    
-    .map-container {
-      position: relative;
-      padding-bottom: 75%;
-      height: 0;
-      overflow: hidden;
-      margin-bottom: 20px;
-    }
-    
-    .map-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-    
-    .address {
-      margin-bottom: 20px;
-    }
-    
-    .links {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fade-in 1s ease 0.5s forwards;
-    }
-    
-    @keyframes fade-in {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    .links a {
-      display: inline-block;
-      margin: 0 10px;
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    
-    .links a:hover {
-      background-color: #666;
-    }
-
-    #music-player {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      background-color: #fff;
-      padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      display: flex;
-      align-items: center;
-    }
-
-    #music-player audio {
-      margin-right: 10px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h1 class="title">Devansh Birthday</h1>
-      <p class="subtitle">Date of Event: 26th May 2023</p>
-      <p class="subtitle">Time of Event: 07:00 PM</p>
-    </div>
-    
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.780370522283!2d73.7592994153454!3d18.576441071618226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bede518e7991%3A0xa00c8a997be96296!2sHotel%20Manali!5e0!3m2!1sen!2sin!4v1622186016966!5m2!1sen!2sin" allowfullscreen></iframe>
-    </div>
-
-    <div class="address">
-      <p>Address for Event:</p>
-      <p>Hotel Manali</p>
-      <p>Near Nandan Prospera Gold, Balewadi Pune</p>
-    </div>
-    
-    <div class="address">
-      <p>Home Address:</p>
-      <p>Ishan Residency, 02, Ishan Residency</p>
-      <p>Samarth Colony, Pan card club road, in HDFC Bank lane, Baner, Pune, Maharashtra 411045</p>
-    </div>
-    
-    <div class="links">
-      <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Devansh%20Birthday&dates=20230526T190000/20230526T210000">Add to Calendar</a>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=Hotel+Manali,+Near+Nandan+Prospera+Gold,+Balewadi+Pune">Get Directions to Venue</a>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=Ishan+Residency,+02,+Ishan+Residency+Samarth+Colony,+Pan+card+club+road,+in+HDFC+Bank+lane,+Baner,+Pune,+Maharashtra+411045">Get Directions to Home</a>
-    </div>
-
-  </br>
-  </br>
-    <!-- Music player -->
-    <div id="music-player">
-      <audio id="bg-music" src="./HappyBirthday.mp3" loop></audio>
-      <button id="play-btn">&#9658;</button>
-      <button id="pause-btn">&#10074;&#10074;</button>
-    </div>
-  </div>
-
-  <script>
-    // Music player functionality
-    var audio = document.getElementById("bg-music");
-    var playBtn = document.getElementById("play-btn");
-    var pauseBtn = document.getElementById("pause-btn");
-
-    playBtn.addEventListener("click", function() {
-      audio.play();
-    });
-
-    pauseBtn.addEventListener("click", function() {
-      audio.pause();
-    });
-  </script>
-  </div>
-  <script>
-    window.addEventListener("DOMContentLoaded", function() {
-      var container = document.querySelector(".container");
-      container.style.opacity = "1";
-      container.style.transform = "translateY(0)";
-      
-      var links = document.querySelector(".links");
-      links.style.opacity = "1";
-      links.style.transform = "translateY(0)";
-    });
-  </script>
-</body>
+  <head>
+    <title>Birthday Invitation</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+      <div id=outerShell>
+        <img id="stars" src="https://github.com/RebekahAmerson/invitation-Mockup/blob/master/Stars.png?raw=true">
+        <img id="unicorn" src="https://github.com/RebekahAmerson/invitation-Mockup/blob/master/Unicorn.png?raw=true">
+        <div id="infoBox">
+          <ul>
+            <li id="top" class="whiteText">Join us to celebrate the birthday of</li>
+            <li id="name">Jessica Edwards</li>
+            <li class="whiteText">10:00 am</li>
+            <li id="date">6.17.18</li>
+            <li id="place">Serenity Park</li>
+            <li class="whiteText">823 S Broadway</li>
+            <li class="whiteText">Happy Town, USA</li>
+            <li class="whiteText padding">RSVP to save your slice of cake.</li>
+            <li class="whiteText padding">For more information, call 867-5309</li>
+          </ul>
+      </div>
+  </body>
 </html>
